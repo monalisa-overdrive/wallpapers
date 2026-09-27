@@ -1,0 +1,65 @@
+name: AI image check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.png'
+      - '**.PNG'
+      - '**.jpg'
+      - '**.JPG'
+      - '**.jpeg'
+      - '**.JPEG'
+      - '**.webp'
+      - '**.WEBP'
+  workflow_dispatch:
+    inputs:
+      scan_all:
+        description: Check every image in the repo, not just the latest push
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: ai-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install --no-deps -r scripts/requirements-ai-check.txt
+
+      - name: List images to check
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BEFORE: ${{ github.event.before }}
+          SCAN_ALL: ${{ inputs.scan_all }}
+        run: |
+          if [ "${{ github.event_name }}" = workflow_dispatch ] && [ "$SCAN_ALL" = true ]; then
+            git ls-files
+          elif [ "${{ github.event_name }}" = workflow_dispatch ]; then
+            gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA" --jq '.files[] | select(.status != "removed") | .filename'
+          elif [ -z "$BEFORE" ] || [ "$BEFORE" = 0000000000000000000000000000000000000000 ]; then
+            gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA" --jq '.files[] | select(.status != "removed") | .filename'
+          else
+            gh api "repos/$GITHUB_REPOSITORY/compare/$BEFORE...$GITHUB_SHA" --jq '.files[] | select(.status != "removed") | .filename'
+          fi > files.txt
+          cat files.txt
+
+      - name: Check images
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python scripts/ai_check.py --files-from files.txt --open-issues

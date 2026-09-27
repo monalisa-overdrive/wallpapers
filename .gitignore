@@ -1,2 +1,6 @@
 # ignore staging files
 staging/
+
+# ignore python cache files
+__pycache__/
+*.pyc

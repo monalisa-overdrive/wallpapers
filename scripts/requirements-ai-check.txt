@@ -1,0 +1,11 @@
+# Install with: pip install --no-deps -r scripts/requirements-ai-check.txt
+# (--no-deps skips invisible-watermark's torch/onnx dependencies, which ai_check.py doesn't use)
+invisible-watermark==0.2.0
+opencv-python-headless
+PyWavelets
+numpy
+requests
+charset-normalizer
+idna
+urllib3
+certifi
