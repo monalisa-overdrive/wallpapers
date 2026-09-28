@@ -47,14 +47,15 @@ jobs:
           BEFORE: ${{ github.event.before }}
           SCAN_ALL: ${{ inputs.scan_all }}
         run: |
+          # Skip deleted and renamed files. Git only reports a rename when the content is
+          # (nearly) unchanged, so those were already checked under their old name.
+          FILTER='.files[] | select(.status != "removed" and .status != "renamed") | .filename'
           if [ "${{ github.event_name }}" = workflow_dispatch ] && [ "$SCAN_ALL" = true ]; then
             git ls-files
-          elif [ "${{ github.event_name }}" = workflow_dispatch ]; then
-            gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA" --jq '.files[] | select(.status != "removed") | .filename'
-          elif [ -z "$BEFORE" ] || [ "$BEFORE" = 0000000000000000000000000000000000000000 ]; then
-            gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA" --jq '.files[] | select(.status != "removed") | .filename'
+          elif [ "${{ github.event_name }}" = workflow_dispatch ] || [ -z "$BEFORE" ] || [ "$BEFORE" = 0000000000000000000000000000000000000000 ]; then
+            gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA" --jq "$FILTER"
           else
-            gh api "repos/$GITHUB_REPOSITORY/compare/$BEFORE...$GITHUB_SHA" --jq '.files[] | select(.status != "removed") | .filename'
+            gh api "repos/$GITHUB_REPOSITORY/compare/$BEFORE...$GITHUB_SHA" --jq "$FILTER"
           fi > files.txt
           cat files.txt
 

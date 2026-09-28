@@ -1,0 +1,38 @@
+name: Duplicate filename check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.png'
+      - '**.PNG'
+      - '**.jpg'
+      - '**.JPG'
+      - '**.jpeg'
+      - '**.JPEG'
+      - '**.webp'
+      - '**.WEBP'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: duplicate-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      # Only the file list is needed, so skip downloading the images themselves.
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout: scripts
+
+      - name: Check for duplicate filenames
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/dup_check.py --github
