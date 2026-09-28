@@ -12,6 +12,7 @@ on:
       - '**.JPEG'
       - '**.webp'
       - '**.WEBP'
+      - '!.thumbs/**'
   workflow_dispatch:
     inputs:
       scan_all:

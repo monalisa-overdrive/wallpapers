@@ -15,6 +15,7 @@ on:
       - '**.gif'
       - '**.GIF'
       - scripts/make_readmes.py
+      - '!.thumbs/**'
   workflow_dispatch:
 
 permissions:
@@ -28,28 +29,37 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      # Only the file list and READMEs are needed, so skip downloading the images.
+      # Skip downloading the images: the script fetches only the ones whose
+      # thumbnails need (re)generating, straight from git.
       - uses: actions/checkout@v4
         with:
           filter: blob:none
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             /scripts/
+            /.thumbs/
             README.md
 
-      - name: Generate READMEs
-        run: python3 scripts/make_readmes.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Pillow
+        run: pip install pillow
+
+      - name: Generate thumbnails and READMEs
+        run: python scripts/make_readmes.py
 
       # Pushes made with the workflow token don't trigger other workflows, so this can't loop.
       - name: Commit changes
         run: |
-          git add --sparse -A -- '*README.md'
+          git add --sparse -A -- '*README.md' .thumbs
           if git diff --cached --quiet; then
             echo "READMEs already up to date"
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git commit -m 'Update folder READMEs'
+          git commit -m 'Update folder READMEs and thumbnails'
           git pull --rebase
           git push

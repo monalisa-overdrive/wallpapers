@@ -59,7 +59,8 @@ def main():
     args = ap.parse_args()
 
     files = subprocess.run(['git', 'ls-files'], capture_output=True, text=True, check=True).stdout.splitlines()
-    exact, possible = find_duplicates([f for f in files if IMAGE_RE.search(f)])
+    # Skip dot-folders such as .thumbs (README thumbnails).
+    exact, possible = find_duplicates([f for f in files if IMAGE_RE.search(f) and not f.startswith('.')])
     body = report(exact, possible)
     print(body or 'No duplicate filenames.')
     if os.environ.get('GITHUB_STEP_SUMMARY'):

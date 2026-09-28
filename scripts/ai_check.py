@@ -31,6 +31,7 @@ MEDIA_TYPES = {'.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg',
 API_URL = 'https://api.openai.com/v1/content_provenance_checks'
 API_MAX_BYTES = 50 * 1024 * 1024
 ISSUE_LABEL = 'ai-check'
+THUMB_DIR = '.thumbs'
 
 # Only matched against metadata (never pixel data), so false positives stay rare.
 GENERATOR_RE = re.compile(
@@ -264,14 +265,20 @@ def scan(path, api):
     return signals, note, complete
 
 
+def is_generated(path):
+    """True for README thumbnails (.thumbs/), which aren't wallpapers."""
+    return THUMB_DIR in os.path.normpath(path).split(os.sep)
+
+
 def expand(paths):
     for p in paths:
         if os.path.isdir(p):
-            for root, _, names in os.walk(p):
+            for root, dirs, names in os.walk(p):
+                dirs[:] = [d for d in dirs if d != THUMB_DIR]
                 for n in sorted(names):
                     if os.path.splitext(n)[1].lower() in IMAGE_EXTS:
                         yield os.path.join(root, n)
-        elif os.path.splitext(p)[1].lower() in IMAGE_EXTS and os.path.isfile(p):
+        elif os.path.splitext(p)[1].lower() in IMAGE_EXTS and os.path.isfile(p) and not is_generated(p):
             yield p
 
 

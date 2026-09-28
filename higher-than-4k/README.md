@@ -2,208 +2,208 @@
 
 # higher-than-4k
 
-<a href="arches.png"><img src="arches.png" alt="arches.png" title="arches.png" width="800"></a>
+<a href="arches.png"><img src="../.thumbs/higher-than-4k/arches_thumb.webp" alt="arches.png" title="arches.png" width="800"></a>
 
-<a href="astronaut.png"><img src="astronaut.png" alt="astronaut.png" title="astronaut.png" width="800"></a>
+<a href="astronaut.png"><img src="../.thumbs/higher-than-4k/astronaut_thumb.webp" alt="astronaut.png" title="astronaut.png" width="800"></a>
 
-<a href="bamboo.png"><img src="bamboo.png" alt="bamboo.png" title="bamboo.png" width="800"></a>
+<a href="bamboo.png"><img src="../.thumbs/higher-than-4k/bamboo_thumb.webp" alt="bamboo.png" title="bamboo.png" width="800"></a>
 
-<a href="bar-window.png"><img src="bar-window.png" alt="bar-window.png" title="bar-window.png" width="800"></a>
+<a href="bar-window.png"><img src="../.thumbs/higher-than-4k/bar-window_thumb.webp" alt="bar-window.png" title="bar-window.png" width="800"></a>
 
-<a href="belshazzars-feast.png"><img src="belshazzars-feast.png" alt="belshazzars-feast.png" title="belshazzars-feast.png" width="800"></a>
+<a href="belshazzars-feast.png"><img src="../.thumbs/higher-than-4k/belshazzars-feast_thumb.webp" alt="belshazzars-feast.png" title="belshazzars-feast.png" width="800"></a>
 
-<a href="blue-flowers.png"><img src="blue-flowers.png" alt="blue-flowers.png" title="blue-flowers.png" width="800"></a>
+<a href="blue-flowers.png"><img src="../.thumbs/higher-than-4k/blue-flowers_thumb.webp" alt="blue-flowers.png" title="blue-flowers.png" width="800"></a>
 
-<a href="box-cat.png"><img src="box-cat.png" alt="box-cat.png" title="box-cat.png" width="800"></a>
+<a href="box-cat.png"><img src="../.thumbs/higher-than-4k/box-cat_thumb.webp" alt="box-cat.png" title="box-cat.png" width="800"></a>
 
-<a href="breezing-up.png"><img src="breezing-up.png" alt="breezing-up.png" title="breezing-up.png" width="800"></a>
+<a href="breezing-up.png"><img src="../.thumbs/higher-than-4k/breezing-up_thumb.webp" alt="breezing-up.png" title="breezing-up.png" width="800"></a>
 
-<a href="british-alleyway.png"><img src="british-alleyway.png" alt="british-alleyway.png" title="british-alleyway.png" width="800"></a>
+<a href="british-alleyway.png"><img src="../.thumbs/higher-than-4k/british-alleyway_thumb.webp" alt="british-alleyway.png" title="british-alleyway.png" width="800"></a>
 
-<a href="buffalo.png"><img src="buffalo.png" alt="buffalo.png" title="buffalo.png" width="800"></a>
+<a href="buffalo.png"><img src="../.thumbs/higher-than-4k/buffalo_thumb.webp" alt="buffalo.png" title="buffalo.png" width="800"></a>
 
-<a href="bush-berry-2.png"><img src="bush-berry-2.png" alt="bush-berry-2.png" title="bush-berry-2.png" width="800"></a>
+<a href="bush-berry-2.png"><img src="../.thumbs/higher-than-4k/bush-berry-2_thumb.webp" alt="bush-berry-2.png" title="bush-berry-2.png" width="800"></a>
 
-<a href="bush-berry.png"><img src="bush-berry.png" alt="bush-berry.png" title="bush-berry.png" width="800"></a>
+<a href="bush-berry.png"><img src="../.thumbs/higher-than-4k/bush-berry_thumb.webp" alt="bush-berry.png" title="bush-berry.png" width="800"></a>
 
-<a href="bush-flowers.png"><img src="bush-flowers.png" alt="bush-flowers.png" title="bush-flowers.png" width="800"></a>
+<a href="bush-flowers.png"><img src="../.thumbs/higher-than-4k/bush-flowers_thumb.webp" alt="bush-flowers.png" title="bush-flowers.png" width="800"></a>
 
-<a href="camera.png"><img src="camera.png" alt="camera.png" title="camera.png" width="800"></a>
+<a href="camera.png"><img src="../.thumbs/higher-than-4k/camera_thumb.webp" alt="camera.png" title="camera.png" width="800"></a>
 
-<a href="car-fire.png"><img src="car-fire.png" alt="car-fire.png" title="car-fire.png" width="800"></a>
+<a href="car-fire.png"><img src="../.thumbs/higher-than-4k/car-fire_thumb.webp" alt="car-fire.png" title="car-fire.png" width="800"></a>
 
-<a href="caribou.png"><img src="caribou.png" alt="caribou.png" title="caribou.png" width="800"></a>
+<a href="caribou.png"><img src="../.thumbs/higher-than-4k/caribou_thumb.webp" alt="caribou.png" title="caribou.png" width="800"></a>
 
-<a href="castle-eltz.png"><img src="castle-eltz.png" alt="castle-eltz.png" title="castle-eltz.png" width="800"></a>
+<a href="castle-eltz.png"><img src="../.thumbs/higher-than-4k/castle-eltz_thumb.webp" alt="castle-eltz.png" title="castle-eltz.png" width="800"></a>
 
-<a href="castle.png"><img src="castle.png" alt="castle.png" title="castle.png" width="800"></a>
+<a href="castle.png"><img src="../.thumbs/higher-than-4k/castle_thumb.webp" alt="castle.png" title="castle.png" width="800"></a>
 
-<a href="cathedreal.png"><img src="cathedreal.png" alt="cathedreal.png" title="cathedreal.png" width="800"></a>
+<a href="cathedreal.png"><img src="../.thumbs/higher-than-4k/cathedreal_thumb.webp" alt="cathedreal.png" title="cathedreal.png" width="800"></a>
 
-<a href="coastal-walled-city.png"><img src="coastal-walled-city.png" alt="coastal-walled-city.png" title="coastal-walled-city.png" width="800"></a>
+<a href="coastal-walled-city.png"><img src="../.thumbs/higher-than-4k/coastal-walled-city_thumb.webp" alt="coastal-walled-city.png" title="coastal-walled-city.png" width="800"></a>
 
-<a href="copse-of-trees.png"><img src="copse-of-trees.png" alt="copse-of-trees.png" title="copse-of-trees.png" width="800"></a>
+<a href="copse-of-trees.png"><img src="../.thumbs/higher-than-4k/copse-of-trees_thumb.webp" alt="copse-of-trees.png" title="copse-of-trees.png" width="800"></a>
 
-<a href="cupola.png"><img src="cupola.png" alt="cupola.png" title="cupola.png" width="800"></a>
+<a href="cupola.png"><img src="../.thumbs/higher-than-4k/cupola_thumb.webp" alt="cupola.png" title="cupola.png" width="800"></a>
 
-<a href="dark-bouquet-2.png"><img src="dark-bouquet-2.png" alt="dark-bouquet-2.png" title="dark-bouquet-2.png" width="800"></a>
+<a href="dark-bouquet-2.png"><img src="../.thumbs/higher-than-4k/dark-bouquet-2_thumb.webp" alt="dark-bouquet-2.png" title="dark-bouquet-2.png" width="800"></a>
 
-<a href="dark-bouquet.png"><img src="dark-bouquet.png" alt="dark-bouquet.png" title="dark-bouquet.png" width="800"></a>
+<a href="dark-bouquet.png"><img src="../.thumbs/higher-than-4k/dark-bouquet_thumb.webp" alt="dark-bouquet.png" title="dark-bouquet.png" width="800"></a>
 
-<a href="deer-snort.png"><img src="deer-snort.png" alt="deer-snort.png" title="deer-snort.png" width="800"></a>
+<a href="deer-snort.png"><img src="../.thumbs/higher-than-4k/deer-snort_thumb.webp" alt="deer-snort.png" title="deer-snort.png" width="800"></a>
 
-<a href="domed-building.png"><img src="domed-building.png" alt="domed-building.png" title="domed-building.png" width="800"></a>
+<a href="domed-building.png"><img src="../.thumbs/higher-than-4k/domed-building_thumb.webp" alt="domed-building.png" title="domed-building.png" width="800"></a>
 
-<a href="earth-at-night.png"><img src="earth-at-night.png" alt="earth-at-night.png" title="earth-at-night.png" width="800"></a>
+<a href="earth-at-night.png"><img src="../.thumbs/higher-than-4k/earth-at-night_thumb.webp" alt="earth-at-night.png" title="earth-at-night.png" width="800"></a>
 
-<a href="echo-and-narcassias.png"><img src="echo-and-narcassias.png" alt="echo-and-narcassias.png" title="echo-and-narcassias.png" width="800"></a>
+<a href="echo-and-narcassias.png"><img src="../.thumbs/higher-than-4k/echo-and-narcassias_thumb.webp" alt="echo-and-narcassias.png" title="echo-and-narcassias.png" width="800"></a>
 
-<a href="elephants-2.png"><img src="elephants-2.png" alt="elephants-2.png" title="elephants-2.png" width="800"></a>
+<a href="elephants-2.png"><img src="../.thumbs/higher-than-4k/elephants-2_thumb.webp" alt="elephants-2.png" title="elephants-2.png" width="800"></a>
 
-<a href="elephants.png"><img src="elephants.png" alt="elephants.png" title="elephants.png" width="800"></a>
+<a href="elephants.png"><img src="../.thumbs/higher-than-4k/elephants_thumb.webp" alt="elephants.png" title="elephants.png" width="800"></a>
 
-<a href="fall-bench.png"><img src="fall-bench.png" alt="fall-bench.png" title="fall-bench.png" width="800"></a>
+<a href="fall-bench.png"><img src="../.thumbs/higher-than-4k/fall-bench_thumb.webp" alt="fall-bench.png" title="fall-bench.png" width="800"></a>
 
-<a href="foggy-mountain.png"><img src="foggy-mountain.png" alt="foggy-mountain.png" title="foggy-mountain.png" width="800"></a>
+<a href="foggy-mountain.png"><img src="../.thumbs/higher-than-4k/foggy-mountain_thumb.webp" alt="foggy-mountain.png" title="foggy-mountain.png" width="800"></a>
 
-<a href="gilded-building.png"><img src="gilded-building.png" alt="gilded-building.png" title="gilded-building.png" width="800"></a>
+<a href="gilded-building.png"><img src="../.thumbs/higher-than-4k/gilded-building_thumb.webp" alt="gilded-building.png" title="gilded-building.png" width="800"></a>
 
-<a href="green-leaves-4.png"><img src="green-leaves-4.png" alt="green-leaves-4.png" title="green-leaves-4.png" width="800"></a>
+<a href="green-leaves-4.png"><img src="../.thumbs/higher-than-4k/green-leaves-4_thumb.webp" alt="green-leaves-4.png" title="green-leaves-4.png" width="800"></a>
 
-<a href="green-leaves.png"><img src="green-leaves.png" alt="green-leaves.png" title="green-leaves.png" width="800"></a>
+<a href="green-leaves.png"><img src="../.thumbs/higher-than-4k/green-leaves_thumb.webp" alt="green-leaves.png" title="green-leaves.png" width="800"></a>
 
-<a href="green-snake.png"><img src="green-snake.png" alt="green-snake.png" title="green-snake.png" width="800"></a>
+<a href="green-snake.png"><img src="../.thumbs/higher-than-4k/green-snake_thumb.webp" alt="green-snake.png" title="green-snake.png" width="800"></a>
 
-<a href="green-waterfall.png"><img src="green-waterfall.png" alt="green-waterfall.png" title="green-waterfall.png" width="800"></a>
+<a href="green-waterfall.png"><img src="../.thumbs/higher-than-4k/green-waterfall_thumb.webp" alt="green-waterfall.png" title="green-waterfall.png" width="800"></a>
 
-<a href="hanging-flowers.png"><img src="hanging-flowers.png" alt="hanging-flowers.png" title="hanging-flowers.png" width="800"></a>
+<a href="hanging-flowers.png"><img src="../.thumbs/higher-than-4k/hanging-flowers_thumb.webp" alt="hanging-flowers.png" title="hanging-flowers.png" width="800"></a>
 
-<a href="harbor-houses.png"><img src="harbor-houses.png" alt="harbor-houses.png" title="harbor-houses.png" width="800"></a>
+<a href="harbor-houses.png"><img src="../.thumbs/higher-than-4k/harbor-houses_thumb.webp" alt="harbor-houses.png" title="harbor-houses.png" width="800"></a>
 
-<a href="hylas-and-the-nymphs.png"><img src="hylas-and-the-nymphs.png" alt="hylas-and-the-nymphs.png" title="hylas-and-the-nymphs.png" width="800"></a>
+<a href="hylas-and-the-nymphs.png"><img src="../.thumbs/higher-than-4k/hylas-and-the-nymphs_thumb.webp" alt="hylas-and-the-nymphs.png" title="hylas-and-the-nymphs.png" width="800"></a>
 
-<a href="japanese-street-cloudy.png"><img src="japanese-street-cloudy.png" alt="japanese-street-cloudy.png" title="japanese-street-cloudy.png" width="800"></a>
+<a href="japanese-street-cloudy.png"><img src="../.thumbs/higher-than-4k/japanese-street-cloudy_thumb.webp" alt="japanese-street-cloudy.png" title="japanese-street-cloudy.png" width="800"></a>
 
-<a href="japanese-street-downhill.png"><img src="japanese-street-downhill.png" alt="japanese-street-downhill.png" title="japanese-street-downhill.png" width="800"></a>
+<a href="japanese-street-downhill.png"><img src="../.thumbs/higher-than-4k/japanese-street-downhill_thumb.webp" alt="japanese-street-downhill.png" title="japanese-street-downhill.png" width="800"></a>
 
-<a href="jellyfish-2.png"><img src="jellyfish-2.png" alt="jellyfish-2.png" title="jellyfish-2.png" width="800"></a>
+<a href="jellyfish-2.png"><img src="../.thumbs/higher-than-4k/jellyfish-2_thumb.webp" alt="jellyfish-2.png" title="jellyfish-2.png" width="800"></a>
 
-<a href="jellyfish-3.png"><img src="jellyfish-3.png" alt="jellyfish-3.png" title="jellyfish-3.png" width="800"></a>
+<a href="jellyfish-3.png"><img src="../.thumbs/higher-than-4k/jellyfish-3_thumb.webp" alt="jellyfish-3.png" title="jellyfish-3.png" width="800"></a>
 
-<a href="joshua-commanding-the-sun-to-stand-still-upon-gibeon.png"><img src="joshua-commanding-the-sun-to-stand-still-upon-gibeon.png" alt="joshua-commanding-the-sun-to-stand-still-upon-gibeon.png" title="joshua-commanding-the-sun-to-stand-still-upon-gibeon.png" width="800"></a>
+<a href="joshua-commanding-the-sun-to-stand-still-upon-gibeon.png"><img src="../.thumbs/higher-than-4k/joshua-commanding-the-sun-to-stand-still-upon-gibeon_thumb.webp" alt="joshua-commanding-the-sun-to-stand-still-upon-gibeon.png" title="joshua-commanding-the-sun-to-stand-still-upon-gibeon.png" width="800"></a>
 
-<a href="koi-bridge.png"><img src="koi-bridge.png" alt="koi-bridge.png" title="koi-bridge.png" width="800"></a>
+<a href="koi-bridge.png"><img src="../.thumbs/higher-than-4k/koi-bridge_thumb.webp" alt="koi-bridge.png" title="koi-bridge.png" width="800"></a>
 
-<a href="korean-temple.png"><img src="korean-temple.png" alt="korean-temple.png" title="korean-temple.png" width="800"></a>
+<a href="korean-temple.png"><img src="../.thumbs/higher-than-4k/korean-temple_thumb.webp" alt="korean-temple.png" title="korean-temple.png" width="800"></a>
 
-<a href="kyoto-tinted-yellow.png"><img src="kyoto-tinted-yellow.png" alt="kyoto-tinted-yellow.png" title="kyoto-tinted-yellow.png" width="800"></a>
+<a href="kyoto-tinted-yellow.png"><img src="../.thumbs/higher-than-4k/kyoto-tinted-yellow_thumb.webp" alt="kyoto-tinted-yellow.png" title="kyoto-tinted-yellow.png" width="800"></a>
 
-<a href="landscape-2.png"><img src="landscape-2.png" alt="landscape-2.png" title="landscape-2.png" width="800"></a>
+<a href="landscape-2.png"><img src="../.thumbs/higher-than-4k/landscape-2_thumb.webp" alt="landscape-2.png" title="landscape-2.png" width="800"></a>
 
-<a href="landscape.png"><img src="landscape.png" alt="landscape.png" title="landscape.png" width="800"></a>
+<a href="landscape.png"><img src="../.thumbs/higher-than-4k/landscape_thumb.webp" alt="landscape.png" title="landscape.png" width="800"></a>
 
-<a href="leaves-colors.png"><img src="leaves-colors.png" alt="leaves-colors.png" title="leaves-colors.png" width="800"></a>
+<a href="leaves-colors.png"><img src="../.thumbs/higher-than-4k/leaves-colors_thumb.webp" alt="leaves-colors.png" title="leaves-colors.png" width="800"></a>
 
-<a href="leaves-in-water.png"><img src="leaves-in-water.png" alt="leaves-in-water.png" title="leaves-in-water.png" width="800"></a>
+<a href="leaves-in-water.png"><img src="../.thumbs/higher-than-4k/leaves-in-water_thumb.webp" alt="leaves-in-water.png" title="leaves-in-water.png" width="800"></a>
 
-<a href="liberty-leading-the-people.png"><img src="liberty-leading-the-people.png" alt="liberty-leading-the-people.png" title="liberty-leading-the-people.png" width="800"></a>
+<a href="liberty-leading-the-people.png"><img src="../.thumbs/higher-than-4k/liberty-leading-the-people_thumb.webp" alt="liberty-leading-the-people.png" title="liberty-leading-the-people.png" width="800"></a>
 
-<a href="lily-pad.png"><img src="lily-pad.png" alt="lily-pad.png" title="lily-pad.png" width="800"></a>
+<a href="lily-pad.png"><img src="../.thumbs/higher-than-4k/lily-pad_thumb.webp" alt="lily-pad.png" title="lily-pad.png" width="800"></a>
 
-<a href="lonely-tree.png"><img src="lonely-tree.png" alt="lonely-tree.png" title="lonely-tree.png" width="800"></a>
+<a href="lonely-tree.png"><img src="../.thumbs/higher-than-4k/lonely-tree_thumb.webp" alt="lonely-tree.png" title="lonely-tree.png" width="800"></a>
 
-<a href="los-romanos-de-la-decadencia.png"><img src="los-romanos-de-la-decadencia.png" alt="los-romanos-de-la-decadencia.png" title="los-romanos-de-la-decadencia.png" width="800"></a>
+<a href="los-romanos-de-la-decadencia.png"><img src="../.thumbs/higher-than-4k/los-romanos-de-la-decadencia_thumb.webp" alt="los-romanos-de-la-decadencia.png" title="los-romanos-de-la-decadencia.png" width="800"></a>
 
-<a href="medusas-raft.png"><img src="medusas-raft.png" alt="medusas-raft.png" title="medusas-raft.png" width="800"></a>
+<a href="medusas-raft.png"><img src="../.thumbs/higher-than-4k/medusas-raft_thumb.webp" alt="medusas-raft.png" title="medusas-raft.png" width="800"></a>
 
-<a href="meisje-met-de-parel.png"><img src="meisje-met-de-parel.png" alt="meisje-met-de-parel.png" title="meisje-met-de-parel.png" width="800"></a>
+<a href="meisje-met-de-parel.png"><img src="../.thumbs/higher-than-4k/meisje-met-de-parel_thumb.webp" alt="meisje-met-de-parel.png" title="meisje-met-de-parel.png" width="800"></a>
 
-<a href="monkey.png"><img src="monkey.png" alt="monkey.png" title="monkey.png" width="800"></a>
+<a href="monkey.png"><img src="../.thumbs/higher-than-4k/monkey_thumb.webp" alt="monkey.png" title="monkey.png" width="800"></a>
 
-<a href="monument.png"><img src="monument.png" alt="monument.png" title="monument.png" width="800"></a>
+<a href="monument.png"><img src="../.thumbs/higher-than-4k/monument_thumb.webp" alt="monument.png" title="monument.png" width="800"></a>
 
-<a href="moose-landscape.png"><img src="moose-landscape.png" alt="moose-landscape.png" title="moose-landscape.png" width="800"></a>
+<a href="moose-landscape.png"><img src="../.thumbs/higher-than-4k/moose-landscape_thumb.webp" alt="moose-landscape.png" title="moose-landscape.png" width="800"></a>
 
-<a href="neon.png"><img src="neon.png" alt="neon.png" title="neon.png" width="800"></a>
+<a href="neon.png"><img src="../.thumbs/higher-than-4k/neon_thumb.webp" alt="neon.png" title="neon.png" width="800"></a>
 
-<a href="nightmare.png"><img src="nightmare.png" alt="nightmare.png" title="nightmare.png" width="800"></a>
+<a href="nightmare.png"><img src="../.thumbs/higher-than-4k/nightmare_thumb.webp" alt="nightmare.png" title="nightmare.png" width="800"></a>
 
-<a href="nothin-to-see-here.png"><img src="nothin-to-see-here.png" alt="nothin-to-see-here.png" title="nothin-to-see-here.png" width="800"></a>
+<a href="nothin-to-see-here.png"><img src="../.thumbs/higher-than-4k/nothin-to-see-here_thumb.webp" alt="nothin-to-see-here.png" title="nothin-to-see-here.png" width="800"></a>
 
-<a href="orange-flowers.png"><img src="orange-flowers.png" alt="orange-flowers.png" title="orange-flowers.png" width="800"></a>
+<a href="orange-flowers.png"><img src="../.thumbs/higher-than-4k/orange-flowers_thumb.webp" alt="orange-flowers.png" title="orange-flowers.png" width="800"></a>
 
-<a href="painting-flowers.png"><img src="painting-flowers.png" alt="painting-flowers.png" title="painting-flowers.png" width="800"></a>
+<a href="painting-flowers.png"><img src="../.thumbs/higher-than-4k/painting-flowers_thumb.webp" alt="painting-flowers.png" title="painting-flowers.png" width="800"></a>
 
-<a href="pale-flowers-2.png"><img src="pale-flowers-2.png" alt="pale-flowers-2.png" title="pale-flowers-2.png" width="800"></a>
+<a href="pale-flowers-2.png"><img src="../.thumbs/higher-than-4k/pale-flowers-2_thumb.webp" alt="pale-flowers-2.png" title="pale-flowers-2.png" width="800"></a>
 
-<a href="pale-flowers.png"><img src="pale-flowers.png" alt="pale-flowers.png" title="pale-flowers.png" width="800"></a>
+<a href="pale-flowers.png"><img src="../.thumbs/higher-than-4k/pale-flowers_thumb.webp" alt="pale-flowers.png" title="pale-flowers.png" width="800"></a>
 
-<a href="pale-purple-flowers.png"><img src="pale-purple-flowers.png" alt="pale-purple-flowers.png" title="pale-purple-flowers.png" width="800"></a>
+<a href="pale-purple-flowers.png"><img src="../.thumbs/higher-than-4k/pale-purple-flowers_thumb.webp" alt="pale-purple-flowers.png" title="pale-purple-flowers.png" width="800"></a>
 
-<a href="pale-red-roses.png"><img src="pale-red-roses.png" alt="pale-red-roses.png" title="pale-red-roses.png" width="800"></a>
+<a href="pale-red-roses.png"><img src="../.thumbs/higher-than-4k/pale-red-roses_thumb.webp" alt="pale-red-roses.png" title="pale-red-roses.png" width="800"></a>
 
-<a href="pale-roses.png"><img src="pale-roses.png" alt="pale-roses.png" title="pale-roses.png" width="800"></a>
+<a href="pale-roses.png"><img src="../.thumbs/higher-than-4k/pale-roses_thumb.webp" alt="pale-roses.png" title="pale-roses.png" width="800"></a>
 
-<a href="panda-2.png"><img src="panda-2.png" alt="panda-2.png" title="panda-2.png" width="800"></a>
+<a href="panda-2.png"><img src="../.thumbs/higher-than-4k/panda-2_thumb.webp" alt="panda-2.png" title="panda-2.png" width="800"></a>
 
-<a href="panda.png"><img src="panda.png" alt="panda.png" title="panda.png" width="800"></a>
+<a href="panda.png"><img src="../.thumbs/higher-than-4k/panda_thumb.webp" alt="panda.png" title="panda.png" width="800"></a>
 
-<a href="penguins-2.png"><img src="penguins-2.png" alt="penguins-2.png" title="penguins-2.png" width="800"></a>
+<a href="penguins-2.png"><img src="../.thumbs/higher-than-4k/penguins-2_thumb.webp" alt="penguins-2.png" title="penguins-2.png" width="800"></a>
 
-<a href="penguins.png"><img src="penguins.png" alt="penguins.png" title="penguins.png" width="800"></a>
+<a href="penguins.png"><img src="../.thumbs/higher-than-4k/penguins_thumb.webp" alt="penguins.png" title="penguins.png" width="800"></a>
 
-<a href="pink-flowers-2.png"><img src="pink-flowers-2.png" alt="pink-flowers-2.png" title="pink-flowers-2.png" width="800"></a>
+<a href="pink-flowers-2.png"><img src="../.thumbs/higher-than-4k/pink-flowers-2_thumb.webp" alt="pink-flowers-2.png" title="pink-flowers-2.png" width="800"></a>
 
-<a href="pink-flowers-3.png"><img src="pink-flowers-3.png" alt="pink-flowers-3.png" title="pink-flowers-3.png" width="800"></a>
+<a href="pink-flowers-3.png"><img src="../.thumbs/higher-than-4k/pink-flowers-3_thumb.webp" alt="pink-flowers-3.png" title="pink-flowers-3.png" width="800"></a>
 
-<a href="pink-flowers.png"><img src="pink-flowers.png" alt="pink-flowers.png" title="pink-flowers.png" width="800"></a>
+<a href="pink-flowers.png"><img src="../.thumbs/higher-than-4k/pink-flowers_thumb.webp" alt="pink-flowers.png" title="pink-flowers.png" width="800"></a>
 
-<a href="pink-roses.png"><img src="pink-roses.png" alt="pink-roses.png" title="pink-roses.png" width="800"></a>
+<a href="pink-roses.png"><img src="../.thumbs/higher-than-4k/pink-roses_thumb.webp" alt="pink-roses.png" title="pink-roses.png" width="800"></a>
 
-<a href="purple-leaves.png"><img src="purple-leaves.png" alt="purple-leaves.png" title="purple-leaves.png" width="800"></a>
+<a href="purple-leaves.png"><img src="../.thumbs/higher-than-4k/purple-leaves_thumb.webp" alt="purple-leaves.png" title="purple-leaves.png" width="800"></a>
 
-<a href="pyramid.png"><img src="pyramid.png" alt="pyramid.png" title="pyramid.png" width="800"></a>
+<a href="pyramid.png"><img src="../.thumbs/higher-than-4k/pyramid_thumb.webp" alt="pyramid.png" title="pyramid.png" width="800"></a>
 
-<a href="pyramids.png"><img src="pyramids.png" alt="pyramids.png" title="pyramids.png" width="800"></a>
+<a href="pyramids.png"><img src="../.thumbs/higher-than-4k/pyramids_thumb.webp" alt="pyramids.png" title="pyramids.png" width="800"></a>
 
-<a href="red-and-green-leaves.png"><img src="red-and-green-leaves.png" alt="red-and-green-leaves.png" title="red-and-green-leaves.png" width="800"></a>
+<a href="red-and-green-leaves.png"><img src="../.thumbs/higher-than-4k/red-and-green-leaves_thumb.webp" alt="red-and-green-leaves.png" title="red-and-green-leaves.png" width="800"></a>
 
-<a href="river-houses.png"><img src="river-houses.png" alt="river-houses.png" title="river-houses.png" width="800"></a>
+<a href="river-houses.png"><img src="../.thumbs/higher-than-4k/river-houses_thumb.webp" alt="river-houses.png" title="river-houses.png" width="800"></a>
 
-<a href="rose-bush.png"><img src="rose-bush.png" alt="rose-bush.png" title="rose-bush.png" width="800"></a>
+<a href="rose-bush.png"><img src="../.thumbs/higher-than-4k/rose-bush_thumb.webp" alt="rose-bush.png" title="rose-bush.png" width="800"></a>
 
-<a href="ruins.png"><img src="ruins.png" alt="ruins.png" title="ruins.png" width="800"></a>
+<a href="ruins.png"><img src="../.thumbs/higher-than-4k/ruins_thumb.webp" alt="ruins.png" title="ruins.png" width="800"></a>
 
-<a href="small-white-flowers-2.png"><img src="small-white-flowers-2.png" alt="small-white-flowers-2.png" title="small-white-flowers-2.png" width="800"></a>
+<a href="small-white-flowers-2.png"><img src="../.thumbs/higher-than-4k/small-white-flowers-2_thumb.webp" alt="small-white-flowers-2.png" title="small-white-flowers-2.png" width="800"></a>
 
-<a href="small-white-flowers.png"><img src="small-white-flowers.png" alt="small-white-flowers.png" title="small-white-flowers.png" width="800"></a>
+<a href="small-white-flowers.png"><img src="../.thumbs/higher-than-4k/small-white-flowers_thumb.webp" alt="small-white-flowers.png" title="small-white-flowers.png" width="800"></a>
 
-<a href="snowy-wood.png"><img src="snowy-wood.png" alt="snowy-wood.png" title="snowy-wood.png" width="800"></a>
+<a href="snowy-wood.png"><img src="../.thumbs/higher-than-4k/snowy-wood_thumb.webp" alt="snowy-wood.png" title="snowy-wood.png" width="800"></a>
 
-<a href="space-capsule.png"><img src="space-capsule.png" alt="space-capsule.png" title="space-capsule.png" width="800"></a>
+<a href="space-capsule.png"><img src="../.thumbs/higher-than-4k/space-capsule_thumb.webp" alt="space-capsule.png" title="space-capsule.png" width="800"></a>
 
-<a href="sphynx.png"><img src="sphynx.png" alt="sphynx.png" title="sphynx.png" width="800"></a>
+<a href="sphynx.png"><img src="../.thumbs/higher-than-4k/sphynx_thumb.webp" alt="sphynx.png" title="sphynx.png" width="800"></a>
 
-<a href="spiral-staircase.png"><img src="spiral-staircase.png" alt="spiral-staircase.png" title="spiral-staircase.png" width="800"></a>
+<a href="spiral-staircase.png"><img src="../.thumbs/higher-than-4k/spiral-staircase_thumb.webp" alt="spiral-staircase.png" title="spiral-staircase.png" width="800"></a>
 
-<a href="stonehenge.png"><img src="stonehenge.png" alt="stonehenge.png" title="stonehenge.png" width="800"></a>
+<a href="stonehenge.png"><img src="../.thumbs/higher-than-4k/stonehenge_thumb.webp" alt="stonehenge.png" title="stonehenge.png" width="800"></a>
 
-<a href="teal-bouquet.png"><img src="teal-bouquet.png" alt="teal-bouquet.png" title="teal-bouquet.png" width="800"></a>
+<a href="teal-bouquet.png"><img src="../.thumbs/higher-than-4k/teal-bouquet_thumb.webp" alt="teal-bouquet.png" title="teal-bouquet.png" width="800"></a>
 
-<a href="the-birth-of-venus.png"><img src="the-birth-of-venus.png" alt="the-birth-of-venus.png" title="the-birth-of-venus.png" width="800"></a>
+<a href="the-birth-of-venus.png"><img src="../.thumbs/higher-than-4k/the-birth-of-venus_thumb.webp" alt="the-birth-of-venus.png" title="the-birth-of-venus.png" width="800"></a>
 
-<a href="the-knight-at-the-crossroads.png"><img src="the-knight-at-the-crossroads.png" alt="the-knight-at-the-crossroads.png" title="the-knight-at-the-crossroads.png" width="800"></a>
+<a href="the-knight-at-the-crossroads.png"><img src="../.thumbs/higher-than-4k/the-knight-at-the-crossroads_thumb.webp" alt="the-knight-at-the-crossroads.png" title="the-knight-at-the-crossroads.png" width="800"></a>
 
-<a href="the-lady-of-shallot-waterhouse.png"><img src="the-lady-of-shallot-waterhouse.png" alt="the-lady-of-shallot-waterhouse.png" title="the-lady-of-shallot-waterhouse.png" width="800"></a>
+<a href="the-lady-of-shallot-waterhouse.png"><img src="../.thumbs/higher-than-4k/the-lady-of-shallot-waterhouse_thumb.webp" alt="the-lady-of-shallot-waterhouse.png" title="the-lady-of-shallot-waterhouse.png" width="800"></a>
 
-<a href="tiled-roofs.png"><img src="tiled-roofs.png" alt="tiled-roofs.png" title="tiled-roofs.png" width="800"></a>
+<a href="tiled-roofs.png"><img src="../.thumbs/higher-than-4k/tiled-roofs_thumb.webp" alt="tiled-roofs.png" title="tiled-roofs.png" width="800"></a>
 
-<a href="train-tracks.png"><img src="train-tracks.png" alt="train-tracks.png" title="train-tracks.png" width="800"></a>
+<a href="train-tracks.png"><img src="../.thumbs/higher-than-4k/train-tracks_thumb.webp" alt="train-tracks.png" title="train-tracks.png" width="800"></a>
 
-<a href="trees.png"><img src="trees.png" alt="trees.png" title="trees.png" width="800"></a>
+<a href="trees.png"><img src="../.thumbs/higher-than-4k/trees_thumb.webp" alt="trees.png" title="trees.png" width="800"></a>
 
-<a href="wall-2.png"><img src="wall-2.png" alt="wall-2.png" title="wall-2.png" width="800"></a>
+<a href="wall-2.png"><img src="../.thumbs/higher-than-4k/wall-2_thumb.webp" alt="wall-2.png" title="wall-2.png" width="800"></a>
 
-<a href="watermelon-flowers.png"><img src="watermelon-flowers.png" alt="watermelon-flowers.png" title="watermelon-flowers.png" width="800"></a>
+<a href="watermelon-flowers.png"><img src="../.thumbs/higher-than-4k/watermelon-flowers_thumb.webp" alt="watermelon-flowers.png" title="watermelon-flowers.png" width="800"></a>
 
-<a href="white-flowers.png"><img src="white-flowers.png" alt="white-flowers.png" title="white-flowers.png" width="800"></a>
+<a href="white-flowers.png"><img src="../.thumbs/higher-than-4k/white-flowers_thumb.webp" alt="white-flowers.png" title="white-flowers.png" width="800"></a>

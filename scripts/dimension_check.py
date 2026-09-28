@@ -62,7 +62,8 @@ def list_images():
         return subprocess.run(['git', 'ls-files', *args], capture_output=True, text=True, check=True).stdout.splitlines()
     deleted = set(git('--deleted'))
     return [f for f in git('--cached', '--others', '--exclude-standard')
-            if f not in deleted and '/' in f and os.path.splitext(f)[1].lower() in IMAGE_EXTS]
+            if f not in deleted and '/' in f and not f.startswith('.')  # skip .thumbs etc.
+            and os.path.splitext(f)[1].lower() in IMAGE_EXTS]
 
 
 def check(files):
