@@ -150,40 +150,92 @@ def watermark_signals(path):
     return signals
 
 
+def parse_duration(value):
+    """Parse OpenAI rate-limit durations like '20ms', '1s', '6m0s' into seconds."""
+    if not value:
+        return None
+    try:
+        return float(value)  # retry-after is plain seconds
+    except ValueError:
+        pass
+    parts = re.findall(r'([\d.]+)(ms|h|m|s)', value)
+    if not parts:
+        return None
+    scale = {'ms': 0.001, 's': 1, 'm': 60, 'h': 3600}
+    return sum(float(n) * scale[unit] for n, unit in parts)
+
+
 class ProvenanceAPI:
-    def __init__(self, key):
+    """OpenAI content provenance checks, paced to stay under the (unpublished) rate limit.
+
+    Requests are spaced at least `interval` seconds apart; every 429 doubles the
+    spacing. Waits follow the retry-after / x-ratelimit-reset-requests headers when
+    OpenAI sends them. If several files in a row exhaust their retries, the API is
+    skipped for the rest of the run rather than burning the job's time limit.
+    """
+    MAX_ATTEMPTS = 6
+    MAX_WAIT = 300
+    GIVE_UP_AFTER = 3  # consecutive files that failed every retry
+
+    def __init__(self, key, interval):
         import requests
         self.session = requests.Session()
         self.session.headers['Authorization'] = f'Bearer {key}'
+        self.interval = interval
+        self.last_request = 0.0
+        self.consecutive_failures = 0
         self.disabled = None
 
+    def _post(self, path, media_type):
+        wait = self.last_request + self.interval - time.monotonic()
+        if wait > 0:
+            time.sleep(wait)
+        self.last_request = time.monotonic()
+        with open(path, 'rb') as f:
+            return self.session.post(API_URL, files={'file': (os.path.basename(path), f, media_type)}, timeout=120)
+
     def check(self, path):
+        """Return (signals, note, complete)."""
         if self.disabled:
-            return [], None
-        ext = os.path.splitext(path)[1].lower()
+            return [], self.disabled, False
         if os.path.getsize(path) > API_MAX_BYTES:
-            return [], 'file over 50 MiB, skipped OpenAI check'
-        for attempt in range(6):
-            with open(path, 'rb') as f:
-                files = {'file': (os.path.basename(path), f, MEDIA_TYPES[ext])}
-                try:
-                    r = self.session.post(API_URL, files=files, timeout=120)
-                except Exception as e:  # network errors: retry
-                    err = str(e)
-                    time.sleep(2 ** attempt)
-                    continue
-            if r.status_code == 429 or r.status_code >= 500:
+            return [], 'file over 50 MiB, skipped OpenAI check', True
+        media_type = MEDIA_TYPES[os.path.splitext(path)[1].lower()]
+        err = None
+        for attempt in range(self.MAX_ATTEMPTS):
+            backoff = min(self.MAX_WAIT, 5 * 2 ** attempt)
+            try:
+                r = self._post(path, media_type)
+            except Exception as e:  # network errors: retry
+                err = str(e)
+                time.sleep(backoff)
+                continue
+            if r.status_code == 429:
+                self.interval = min(60, max(1, self.interval) * 2)
+                wait = (parse_duration(r.headers.get('retry-after'))
+                        or parse_duration(r.headers.get('x-ratelimit-reset-requests')) or backoff)
+                err = 'HTTP 429 (rate limited)'
+                print(f'           rate limited; waiting {wait:.0f}s, then 1 request per {self.interval:.0f}s',
+                      file=sys.stderr)
+                time.sleep(min(self.MAX_WAIT, wait))
+                continue
+            if r.status_code >= 500:
                 err = f'HTTP {r.status_code}'
-                time.sleep(float(r.headers.get('retry-after') or 2 ** (attempt + 1)))
+                time.sleep(backoff)
                 continue
             if r.status_code in (401, 403, 404):
                 self.disabled = f'OpenAI API returned HTTP {r.status_code}; check the key and endpoint access'
                 print(f'warning: {self.disabled}', file=sys.stderr)
-                return [], self.disabled
+                return [], self.disabled, False
+            self.consecutive_failures = 0
             if r.status_code != 200:
-                return [], f'OpenAI API HTTP {r.status_code}: {r.text[:200]}'
-            return self._signals(r.json()), None
-        return [], f'OpenAI API failed after retries ({err})'
+                return [], f'OpenAI API HTTP {r.status_code}: {r.text[:200]}', False
+            return self._signals(r.json()), None, True
+        self.consecutive_failures += 1
+        if self.consecutive_failures >= self.GIVE_UP_AFTER:
+            self.disabled = f'OpenAI API skipped after {self.GIVE_UP_AFTER} files in a row failed ({err})'
+            print(f'warning: {self.disabled}', file=sys.stderr)
+        return [], f'OpenAI API failed after retries ({err})', False
 
     @staticmethod
     def _signals(body):
@@ -205,11 +257,11 @@ def scan(path, api):
     signals, c2pa = metadata_signals(data)
     signals += c2pa_signals(c2pa)
     signals += watermark_signals(path)
-    note = None
+    note, complete = None, True
     if api:
-        api_signals, note = api.check(path)
+        api_signals, note, complete = api.check(path)
         signals += api_signals
-    return signals, note
+    return signals, note, complete
 
 
 def expand(paths):
@@ -261,6 +313,8 @@ def main():
     ap.add_argument('--files-from', help='file with one image path per line')
     ap.add_argument('--no-api', action='store_true', help='skip the OpenAI provenance API')
     ap.add_argument('--open-issues', action='store_true', help='open a GitHub issue per flagged file (needs gh)')
+    ap.add_argument('--api-interval', type=float, default=5,
+                    help='minimum seconds between OpenAI API requests (default 5; grows after rate limiting)')
     args = ap.parse_args()
 
     paths = list(args.paths)
@@ -273,7 +327,7 @@ def main():
         return
 
     key = os.environ.get('OPENAI_API_KEY')
-    api = ProvenanceAPI(key) if key and not args.no_api else None
+    api = ProvenanceAPI(key, args.api_interval) if key and not args.no_api else None
     if not api and not args.no_api:
         print('note: OPENAI_API_KEY not set; skipping OpenAI provenance check', file=sys.stderr)
 
@@ -281,11 +335,14 @@ def main():
         gh('label', 'create', ISSUE_LABEL, '--color', 'D93F0B', '--force',
            '--description', 'Image flagged by the AI-image check')
 
-    flagged, notes = [], []
+    flagged, notes, incomplete = [], [], []
     for n, path in enumerate(files, 1):
-        signals, note = scan(path, api)
-        status = 'AI' if any(l == AI for l, _ in signals) else 'REVIEW' if signals else 'ok'
-        print(f'[{n}/{len(files)}] {status:6} {path}')
+        signals, note, complete = scan(path, api)
+        if not complete:
+            incomplete.append(path)
+        status = ('AI' if any(l == AI for l, _ in signals) else 'REVIEW' if signals
+                  else 'ok' if complete else 'INCOMPLETE')
+        print(f'[{n}/{len(files)}] {status:10} {path}')
         for level, text in signals:
             print(f'           - {text}')
         if note:
@@ -299,6 +356,9 @@ def main():
     summary = [f'## AI image check\n', f'Checked {len(files)} image(s); {len(flagged)} flagged.\n']
     if api is None:
         summary.append('> OpenAI provenance check was skipped (no `OPENAI_API_KEY`).\n')
+    if incomplete:
+        summary.append(f'> **The OpenAI check did not finish for {len(incomplete)} image(s)** (see ⚠️ below). '
+                       'Re-run this workflow to retry.\n')
     for path, signals in flagged:
         summary.append(f'- `{path}`: ' + '; '.join(text for _, text in signals))
     for path, note in notes:
@@ -307,7 +367,10 @@ def main():
         with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as f:
             f.write('\n'.join(summary) + '\n')
     print(f'\n{len(flagged)} of {len(files)} image(s) flagged')
+    if incomplete:
+        print(f'{len(incomplete)} image(s) did not get the OpenAI check; re-run to retry', file=sys.stderr)
+        return 1
 
 
 if __name__ == '__main__':
-    main()
+    sys.exit(main())
