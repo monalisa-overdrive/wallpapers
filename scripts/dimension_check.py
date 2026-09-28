@@ -2,8 +2,7 @@
 
 Rules, by top-level folder:
   - WIDTHxHEIGHT (e.g. 3840x2160): every image is exactly that size.
-  - 0x0-* (e.g. 0x0-higher-resolution): every image is larger than the biggest
-    WIDTHxHEIGHT folder.
+  - higher-than-4k: every image is larger than 3840x2160.
   - Every folder except non-standard/: width:height is exactly 16:9.
 
 Usage:
@@ -20,6 +19,7 @@ from issue_sync import sync_issue
 
 IMAGE_EXTS = {'.png', '.jpg', '.jpeg', '.webp'}
 EXACT_RE = re.compile(r'(\d+)x(\d+)')
+HIGHER_RES_FOLDER, HIGHER_RES_MIN = 'higher-than-4k', (3840, 2160)
 NO_RATIO_CHECK = {'non-standard'}
 ISSUE_TITLE = 'Image dimension problems'
 ISSUE_LABEL = 'dimension-check'
@@ -66,9 +66,7 @@ def list_images():
 
 
 def check(files):
-    exact_sizes = [tuple(map(int, m.groups())) for m in
-                   (EXACT_RE.fullmatch(f.split('/')[0]) for f in files) if m and m.group(1) != '0']
-    largest = max(exact_sizes, default=(0, 0))
+    min_w, min_h = HIGHER_RES_MIN
     problems = []
     for path in sorted(files):
         folder = path.split('/')[0]
@@ -78,10 +76,10 @@ def check(files):
             continue
         w, h = size
         m = EXACT_RE.fullmatch(folder)
-        if m and m.group(1) != '0' and (w, h) != tuple(map(int, m.groups())):
+        if m and (w, h) != tuple(map(int, m.groups())):
             problems.append((path, f'is {w}x{h}, but the folder is {m.group(0)}'))
-        elif folder.startswith('0x0') and not (w > largest[0] and h > largest[1]):
-            problems.append((path, f'is {w}x{h}, not larger than {largest[0]}x{largest[1]}'))
+        elif folder == HIGHER_RES_FOLDER and not (w > min_w and h > min_h):
+            problems.append((path, f'is {w}x{h}, not larger than {min_w}x{min_h}'))
         if folder not in NO_RATIO_CHECK and w * 9 != h * 16:
             problems.append((path, f'is {w}x{h}, not exactly 16:9 (ratio {w / h:.4f}; 16:9 is 1.7778)'))
     return problems

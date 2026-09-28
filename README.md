@@ -2,6 +2,6 @@
 
 # wallpapers
 
-- [0x0-higher-resolution](0x0-higher-resolution/README.md) (103 images)
 - [2560x1440](2560x1440/README.md) (32 images)
 - [3840x2160](3840x2160/README.md) (73 images)
+- [higher-than-4k](higher-than-4k/README.md) (103 images)
