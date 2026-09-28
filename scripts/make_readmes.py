@@ -1,8 +1,8 @@
-"""Write a README.md preview in every folder that contains images.
+"""Write a README.md preview in every folder that contains images, plus a root index.
 
-Each README is the folder name as a heading, then every image as a thumbnail that
-links to the full file. READMEs this script wrote for folders that no longer have
-images are removed.
+Each folder README is the folder name as a heading, then every image as a thumbnail
+that links to the full file. The root README links to each folder README. READMEs
+this script wrote for folders that no longer have images are removed.
 
 Usage:
   python scripts/make_readmes.py
@@ -39,10 +39,18 @@ def main():
             lines.append(f'<a href="{url}"><img src="{url}" alt="{name}" title="{name}" width="{THUMB_WIDTH}"></a>')
         write(f'{folder}/README.md', '\n'.join(lines) + '\n')
 
+    # Root README: one link per folder preview.
+    top = subprocess.run(['git', 'rev-parse', '--show-toplevel'], capture_output=True, text=True, check=True)
+    lines = [MARKER, '', f'# {os.path.basename(top.stdout.strip())}', '']
+    for folder, names in sorted(folders.items()):
+        count = f'{len(names)} image{"s" if len(names) != 1 else ""}'
+        lines.append(f'- [{folder}]({quote(folder)}/README.md) ({count})')
+    write('README.md', '\n'.join(lines) + '\n')
+
     # Remove generated READMEs from folders that no longer contain images.
     for f in files:
         folder, _, name = f.rpartition('/')
-        if name == 'README.md' and folder not in folders and os.path.exists(f):
+        if name == 'README.md' and folder and folder not in folders and os.path.exists(f):
             with open(f, encoding='utf-8') as fh:
                 if fh.readline().strip() == MARKER:
                     os.remove(f)
@@ -59,7 +67,8 @@ def write(path, content):
             print(f'skipped {path} (hand-written README, not overwriting)')
             return
     # In CI's sparse checkout, image folders may not exist on disk yet.
-    os.makedirs(os.path.dirname(path), exist_ok=True)
+    if os.path.dirname(path):
+        os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', encoding='utf-8', newline='\n') as f:
         f.write(content)
     print(f'wrote {path}')
