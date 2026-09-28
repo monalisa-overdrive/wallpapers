@@ -1,0 +1,35 @@
+name: Image dimension check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.png'
+      - '**.PNG'
+      - '**.jpg'
+      - '**.JPG'
+      - '**.jpeg'
+      - '**.JPEG'
+      - '**.webp'
+      - '**.WEBP'
+      - scripts/dimension_check.py
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: dimension-check
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check image dimensions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/dimension_check.py --github

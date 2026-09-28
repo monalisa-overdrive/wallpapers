@@ -1,0 +1,55 @@
+name: Update folder READMEs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**.png'
+      - '**.PNG'
+      - '**.jpg'
+      - '**.JPG'
+      - '**.jpeg'
+      - '**.JPEG'
+      - '**.webp'
+      - '**.WEBP'
+      - '**.gif'
+      - '**.GIF'
+      - scripts/make_readmes.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: readmes
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      # Only the file list and READMEs are needed, so skip downloading the images.
+      - uses: actions/checkout@v4
+        with:
+          filter: blob:none
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /scripts/
+            README.md
+
+      - name: Generate READMEs
+        run: python3 scripts/make_readmes.py
+
+      # Pushes made with the workflow token don't trigger other workflows, so this can't loop.
+      - name: Commit changes
+        run: |
+          git add --sparse -A -- '*README.md'
+          if git diff --cached --quiet; then
+            echo "READMEs already up to date"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update folder READMEs'
+          git pull --rebase
+          git push
