@@ -15,7 +15,7 @@
 <a href="joro-spider.png"><img src="joro-spider.png" alt="joro-spider.png" title="joro-spider.png" width="400"></a>
 <a href="koi.png"><img src="koi.png" alt="koi.png" title="koi.png" width="400"></a>
 <a href="lanterns.png"><img src="lanterns.png" alt="lanterns.png" title="lanterns.png" width="400"></a>
-<a href="purple-flowers.png"><img src="purple-flowers.png" alt="purple-flowers.png" title="purple-flowers.png" width="400"></a>
+<a href="purple-flowers-2.png"><img src="purple-flowers-2.png" alt="purple-flowers-2.png" title="purple-flowers-2.png" width="400"></a>
 <a href="red-flowers.png"><img src="red-flowers.png" alt="red-flowers.png" title="red-flowers.png" width="400"></a>
 <a href="rocks.png"><img src="rocks.png" alt="rocks.png" title="rocks.png" width="400"></a>
 <a href="s30-z.png"><img src="s30-z.png" alt="s30-z.png" title="s30-z.png" width="400"></a>

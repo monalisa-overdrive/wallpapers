@@ -23,7 +23,7 @@
 <a href="foggy-brick-building.png"><img src="foggy-brick-building.png" alt="foggy-brick-building.png" title="foggy-brick-building.png" width="400"></a>
 <a href="fuji-night.png"><img src="fuji-night.png" alt="fuji-night.png" title="fuji-night.png" width="400"></a>
 <a href="green-leaves-2.png"><img src="green-leaves-2.png" alt="green-leaves-2.png" title="green-leaves-2.png" width="400"></a>
-<a href="green-leaves.png"><img src="green-leaves.png" alt="green-leaves.png" title="green-leaves.png" width="400"></a>
+<a href="green-leaves-3.png"><img src="green-leaves-3.png" alt="green-leaves-3.png" title="green-leaves-3.png" width="400"></a>
 <a href="grilled-crab.png"><img src="grilled-crab.png" alt="grilled-crab.png" title="grilled-crab.png" width="400"></a>
 <a href="japan-alley.png"><img src="japan-alley.png" alt="japan-alley.png" title="japan-alley.png" width="400"></a>
 <a href="japan-garden.png"><img src="japan-garden.png" alt="japan-garden.png" title="japan-garden.png" width="400"></a>
@@ -43,7 +43,7 @@
 <a href="onsen-bath.png"><img src="onsen-bath.png" alt="onsen-bath.png" title="onsen-bath.png" width="400"></a>
 <a href="osaka-castle.png"><img src="osaka-castle.png" alt="osaka-castle.png" title="osaka-castle.png" width="400"></a>
 <a href="painting-japanese.png"><img src="painting-japanese.png" alt="painting-japanese.png" title="painting-japanese.png" width="400"></a>
-<a href="pale-purple-flowers.png"><img src="pale-purple-flowers.png" alt="pale-purple-flowers.png" title="pale-purple-flowers.png" width="400"></a>
+<a href="pale-purple-flowers-2.png"><img src="pale-purple-flowers-2.png" alt="pale-purple-flowers-2.png" title="pale-purple-flowers-2.png" width="400"></a>
 <a href="pinball-couple.png"><img src="pinball-couple.png" alt="pinball-couple.png" title="pinball-couple.png" width="400"></a>
 <a href="plastic-gtr.png"><img src="plastic-gtr.png" alt="plastic-gtr.png" title="plastic-gtr.png" width="400"></a>
 <a href="purple-flowers.png"><img src="purple-flowers.png" alt="purple-flowers.png" title="purple-flowers.png" width="400"></a>
