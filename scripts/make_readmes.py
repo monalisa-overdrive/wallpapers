@@ -143,6 +143,20 @@ def main():
     for folder, paths in sorted(folders.items()):
         count = f'{len(paths)} image{"s" if len(paths) != 1 else ""}'
         lines.append(f'- [{folder}]({quote(folder)}/README.md) ({count})')
+    lines += [
+        '',
+        '## All wallpapers in one folder',
+        '',
+        'To point a slideshow (e.g. Windows\' Personalize > Background > Slideshow) at a single',
+        'folder, run this once after cloning:',
+        '',
+        '```',
+        'python scripts/flatten.py --install-hooks',
+        '```',
+        '',
+        'It builds `all/`, a gitignored folder of hard links to every wallpaper (no extra disk',
+        'space), and installs git hooks that rebuild it after each pull, checkout or rebase.',
+    ]
     write('README.md', '\n'.join(lines) + '\n')
 
     # Remove generated READMEs from folders that no longer contain images.

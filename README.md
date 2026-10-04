@@ -5,3 +5,15 @@
 - [2560x1440](2560x1440/README.md) (32 images)
 - [3840x2160](3840x2160/README.md) (73 images)
 - [higher-than-4k](higher-than-4k/README.md) (103 images)
+
+## All wallpapers in one folder
+
+To point a slideshow (e.g. Windows' Personalize > Background > Slideshow) at a single
+folder, run this once after cloning:
+
+```
+python scripts/flatten.py --install-hooks
+```
+
+It builds `all/`, a gitignored folder of hard links to every wallpaper (no extra disk
+space), and installs git hooks that rebuild it after each pull, checkout or rebase.
